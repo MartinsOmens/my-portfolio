@@ -21,7 +21,7 @@ import Logo from "../assets/logo/logo.svg";
 import Project_1 from "../assets/projects/project-1.png";
 import Project_2 from "../assets/projects/project-2.png";
 
-import Man from "../assets/man.png";
+import Man from "../assets/profile.JPG";
 
 export const assets = {
   //cards
