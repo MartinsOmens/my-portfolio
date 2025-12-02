@@ -1,23 +1,24 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Hero from '../pages/Hero'
-import About from '../pages/About'
-import Experience from '../pages/Experience'
-import Project from '../pages/Project'
-import Footer from '../components/Footer'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../pages/Hero";
+import About from "../pages/About";
+import Footer from "../components/Footer";
+import Contact from "../pages/Contact";
+import Stack from "../pages/Stack";
+import Projects from "../pages/projects/Projects";
 
- 
 const MainLayout = () => {
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <Experience/>
-      <About/>
-      <Project/>
-      <Footer/>
+      <Navbar />
+      <Hero />
+      <About />
+      <Stack/>
+      <Projects/>
+      <Contact />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { assets } from "../assets/assets";
-import { Menu, X } from "lucide-react";
+import { TiThMenu } from "react-icons/ti";
+import { IoClose } from "react-icons/io5";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
@@ -9,8 +9,10 @@ const Navbar = () => {
   const navItems = [
     { label: "Home", to: "hero" },
     { label: "About", to: "about" },
-    { label: "Experience", to: "experience" },
+    { label: "Stack", to: "stack" },
     { label: "Projects", to: "projects" },
+    { label: "Experience", to: "experience" },
+    { label: "Contact", to: "contact" },
   ];
 
   return (
@@ -18,7 +20,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto px-6 md:px-10 py-4">
         {/* Logo */}
         <div>
-          <img src={assets.Logo} alt="Martins Logo" className="w-28" />
+          <h1>Martins</h1>
         </div>
 
         {/* Desktop Menu */}
@@ -41,7 +43,7 @@ const Navbar = () => {
           className="md:hidden text-white cursor-pointer"
           onClick={() => setOpen(!open)}
         >
-          {open ? <X size={28} /> : <Menu size={28} />}
+          {open ? <IoClose size={28} /> : <TiThMenu size={28} />}
         </div>
       </div>
 
