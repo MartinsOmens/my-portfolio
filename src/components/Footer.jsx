@@ -29,7 +29,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full mt-24 pb-12 pt-16 bg-black/20 backdrop-blur-md border-t border-white/10">
+    <footer className="w-full mt-24 pb-12 pt-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* === TOP GRID === */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
